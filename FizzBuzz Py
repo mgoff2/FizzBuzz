@@ -1,0 +1,20 @@
+Task: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”
+
+This isn't a particularly difficult or even interesting problem, but I encountered a blog that said I ought to post it as "proof that (I) can code"...
+
+I assume there are much more compact iterations possible, but it's a bit late and I've been working for the past 12 hours.
+
+Seems to me that the only confusion is tiering the If conditions, such that multiples of 15 don't accidentally get plugged in with Fizzes or Buzzes.
+
+
+
+
+Fizzylist = range(1,100,1)
+for i in Fizzylist:
+    if i%15 ==0:
+        i = "FizzBuzz"
+    elif i %5 == 0:
+        i = "Buzz"
+    elif i%3 ==0:
+        i = "Fizz"
+    print(i)
